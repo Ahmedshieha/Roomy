@@ -15,6 +15,15 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func startButton(_ sender: UIButton) {
+        gotosignin()
+    }
+    
+    func gotosignin()  {
+        let signinstoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let SigninViewController = signinstoryboard.instantiateViewController(withIdentifier: "SigninViewController")
+        self.navigationController?.pushViewController(SigninViewController, animated: true)
+    }
     
 }
 
