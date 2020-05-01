@@ -213,7 +213,6 @@
         <!--Table View Controller-->
         <scene sceneID="aqb-ki-L6H">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xbO-TJ-BBE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="tableViewController" id="yTN-3T-DFn" customClass="tableViewController" customModule="Roomy" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qDf-jC-Oi5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -325,6 +324,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="aT6-wH-wuS"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xbO-TJ-BBE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5843.4782608695659" y="130.58035714285714"/>
         </scene>
@@ -337,20 +337,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xj3-Zh-axi">
-                                <rect key="frame" x="20" y="469" width="194" height="29"/>
+                                <rect key="frame" x="20" y="469" width="143" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="CKY-if-8zl"/>
-                                    <constraint firstAttribute="width" constant="194" id="fzF-nO-ElM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ba1-2e-K4G">
-                                <rect key="frame" x="76" y="788" width="312" height="37"/>
+                                <rect key="frame" x="76" y="788" width="261" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="7Cy-np-AWd"/>
-                                    <constraint firstAttribute="width" constant="262" id="FHa-6x-bME"/>
                                 </constraints>
                                 <state key="normal" title="Request information" backgroundImage="Image-13">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
