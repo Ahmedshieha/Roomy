@@ -20,7 +20,7 @@ class SigninViewController: UIViewController {
         
       gototableView()
         
-        print(Signin.Endpoint.Login.url)
+    
         
     }
     
@@ -31,16 +31,9 @@ class SigninViewController: UIViewController {
                 self.navigationController?.pushViewController(tableViewController, animated: true)
             }
 
+    @IBOutlet weak var usernameTextFile: UITextField!
     
-    let task = URLSession.shared.dataTask(with: Signin.Endpoint.Login.url)  {(data,response,error) in
-        guard let data = data  else{
-            return
-        }
-        let decoder = JSONDecoder()
-        let userData = try! decoder.decode(Signinjson.self, from: data)
-        print(userData)
-    }
-    
+    @IBOutlet weak var passwordTextFile: UITextField!
     
     
     
