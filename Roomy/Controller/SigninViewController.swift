@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Alamofire
 class SigninViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -16,12 +16,21 @@ class SigninViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func SigninButton(_ sender: UIButton) {
-        
-      gototableView()
-        
     
-        
+    @IBOutlet weak var userNameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    
+    @IBAction func SigninButton(_ sender: UIButton) {
+        let email = userNameTextField.text!
+        let password = passwordTextField.text!
+        let user = User(name: "", email: email , password: password)
+        login(user, complation: gototableView)
+       
+    }
+    
+    @IBAction func signupButton(_ sender: Any) {
+        gotoSignup()
     }
     
     
@@ -30,11 +39,14 @@ class SigninViewController: UIViewController {
                 let tableViewController = tableViewStoryBoard.instantiateViewController(withIdentifier: "tableViewController")
                 self.navigationController?.pushViewController(tableViewController, animated: true)
             }
+    
+    
 
-    @IBOutlet weak var usernameTextFile: UITextField!
-    
-    @IBOutlet weak var passwordTextFile: UITextField!
-    
-    
+    func gotoSignup() {
+        let SignupStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+        let SignupViewController = SignupStoryBoard.instantiateViewController(withIdentifier: "SignupViewController")
+        self.navigationController?.pushViewController(SignupViewController, animated: true)
+    }
     
 }
+

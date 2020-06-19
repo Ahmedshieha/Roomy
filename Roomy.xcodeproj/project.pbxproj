@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041C9C70249C0C4000843266 /* URLS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C9C6F249C0C4000843266 /* URLS.swift */; };
+		041C9C72249C110E00843266 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C9C71249C110E00843266 /* UserData.swift */; };
+		041C9C74249C2B6B00843266 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C9C73249C2B6B00843266 /* Login.swift */; };
+		041C9C76249C382800843266 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C9C75249C382800843266 /* SignupViewController.swift */; };
+		041C9C78249C421800843266 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C9C77249C421800843266 /* Signup.swift */; };
 		04655FBB245B8D9400BE89EE /* tableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04655FBA245B8D9400BE89EE /* tableViewController.swift */; };
 		04655FBD245B8FA700BE89EE /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04655FBC245B8FA700BE89EE /* CustomCell.swift */; };
 		04655FBF245B971F00BE89EE /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04655FBE245B971F00BE89EE /* DetailsViewController.swift */; };
@@ -20,6 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041C9C6F249C0C4000843266 /* URLS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLS.swift; sourceTree = "<group>"; };
+		041C9C71249C110E00843266 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		041C9C73249C2B6B00843266 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		041C9C75249C382800843266 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		041C9C77249C421800843266 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
 		04655FBA245B8D9400BE89EE /* tableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewController.swift; sourceTree = "<group>"; };
 		04655FBC245B8FA700BE89EE /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		04655FBE245B971F00BE89EE /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +73,11 @@
 			children = (
 				04DD7A1C2417B23200831440 /* AppDelegate.swift */,
 				04DD7A202417B23200831440 /* ViewController.swift */,
+				041C9C75249C382800843266 /* SignupViewController.swift */,
+				04BB8642245B79E60026460E /* SigninViewController.swift */,
+				04655FBA245B8D9400BE89EE /* tableViewController.swift */,
+				04655FBE245B971F00BE89EE /* DetailsViewController.swift */,
+				04655FBC245B8FA700BE89EE /* CustomCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -70,6 +85,10 @@
 		0440C195248A6E7D00F6EB76 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				041C9C6F249C0C4000843266 /* URLS.swift */,
+				041C9C71249C110E00843266 /* UserData.swift */,
+				041C9C73249C2B6B00843266 /* Login.swift */,
+				041C9C77249C421800843266 /* Signup.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -99,10 +118,6 @@
 				0440C194248A6E7000F6EB76 /* Controller */,
 				0440C193248A6E5B00F6EB76 /* View */,
 				04DD7A2A2417B23400831440 /* Info.plist */,
-				04BB8642245B79E60026460E /* SigninViewController.swift */,
-				04655FBA245B8D9400BE89EE /* tableViewController.swift */,
-				04655FBC245B8FA700BE89EE /* CustomCell.swift */,
-				04655FBE245B971F00BE89EE /* DetailsViewController.swift */,
 			);
 			path = Roomy;
 			sourceTree = "<group>";
@@ -121,7 +136,6 @@
 				B5EBEF19E0A0194953711AE6 /* Pods-Roomy.debug.xcconfig */,
 				1EC1CEEACDD0368B64DC3522 /* Pods-Roomy.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -241,11 +255,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BB8643245B79E60026460E /* SigninViewController.swift in Sources */,
+				041C9C70249C0C4000843266 /* URLS.swift in Sources */,
+				041C9C76249C382800843266 /* SignupViewController.swift in Sources */,
 				04DD7A212417B23200831440 /* ViewController.swift in Sources */,
 				04DD7A1D2417B23200831440 /* AppDelegate.swift in Sources */,
 				04655FBF245B971F00BE89EE /* DetailsViewController.swift in Sources */,
 				04655FBD245B8FA700BE89EE /* CustomCell.swift in Sources */,
+				041C9C74249C2B6B00843266 /* Login.swift in Sources */,
+				041C9C78249C421800843266 /* Signup.swift in Sources */,
 				04655FBB245B8D9400BE89EE /* tableViewController.swift in Sources */,
+				041C9C72249C110E00843266 /* UserData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
