@@ -11,9 +11,7 @@ import UIKit
 class SignupViewController: UIViewController {
 
     @IBOutlet weak var SignupName: UITextField!
-    
     @IBOutlet weak var SignupUserName: UITextField!
-    
     @IBOutlet weak var SignupPassowrd: UITextField!
     
     
@@ -26,7 +24,7 @@ class SignupViewController: UIViewController {
         let Password = SignupPassowrd.text!
         
         let user = User(name: name, email: userName, password: Password)
-        signup(user, complation: accountCreatSucsses)
+        SignUp.signup(user)
         
     }
     

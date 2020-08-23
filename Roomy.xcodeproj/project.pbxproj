@@ -7,32 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0403AB6024F2BB3E0048451D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403AB5F24F2BB3E0048451D /* TableViewController.swift */; };
+		0403AB6424F323550048451D /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403AB6324F323550048451D /* UIViewController+Extension.swift */; };
 		041C9C70249C0C4000843266 /* URLS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C9C6F249C0C4000843266 /* URLS.swift */; };
-		041C9C72249C110E00843266 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C9C71249C110E00843266 /* UserData.swift */; };
+		041C9C72249C110E00843266 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C9C71249C110E00843266 /* User.swift */; };
 		041C9C74249C2B6B00843266 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C9C73249C2B6B00843266 /* Login.swift */; };
 		041C9C76249C382800843266 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C9C75249C382800843266 /* SignupViewController.swift */; };
 		041C9C78249C421800843266 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C9C77249C421800843266 /* Signup.swift */; };
-		04655FBB245B8D9400BE89EE /* tableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04655FBA245B8D9400BE89EE /* tableViewController.swift */; };
-		04655FBD245B8FA700BE89EE /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04655FBC245B8FA700BE89EE /* CustomCell.swift */; };
-		04655FBF245B971F00BE89EE /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04655FBE245B971F00BE89EE /* DetailsViewController.swift */; };
+		0421DAED24F18A7400447142 /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421DAEB24F18A7400447142 /* RoomCell.swift */; };
+		0421DAEE24F18A7400447142 /* RoomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0421DAEC24F18A7400447142 /* RoomCell.xib */; };
+		0428872B249D63A1002E231B /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428872A249D63A1002E231B /* Room.swift */; };
 		04BB8643245B79E60026460E /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB8642245B79E60026460E /* SigninViewController.swift */; };
 		04DD7A1D2417B23200831440 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DD7A1C2417B23200831440 /* AppDelegate.swift */; };
 		04DD7A212417B23200831440 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DD7A202417B23200831440 /* ViewController.swift */; };
 		04DD7A242417B23200831440 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DD7A222417B23200831440 /* Main.storyboard */; };
 		04DD7A262417B23400831440 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DD7A252417B23400831440 /* Assets.xcassets */; };
 		04DD7A292417B23400831440 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DD7A272417B23400831440 /* LaunchScreen.storyboard */; };
+		04FCF8D924A697E6005C5E2F /* GetAllRooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FCF8D824A697E6005C5E2F /* GetAllRooms.swift */; };
 		7DF83FBD2B5CC1F06BD9E61E /* Pods_Roomy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 295FAB19B85551289DDC01D3 /* Pods_Roomy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0403AB5F24F2BB3E0048451D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		0403AB6324F323550048451D /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		041C9C6F249C0C4000843266 /* URLS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLS.swift; sourceTree = "<group>"; };
-		041C9C71249C110E00843266 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		041C9C71249C110E00843266 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		041C9C73249C2B6B00843266 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		041C9C75249C382800843266 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		041C9C77249C421800843266 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
-		04655FBA245B8D9400BE89EE /* tableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewController.swift; sourceTree = "<group>"; };
-		04655FBC245B8FA700BE89EE /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
-		04655FBE245B971F00BE89EE /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		0421DAEB24F18A7400447142 /* RoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCell.swift; sourceTree = "<group>"; };
+		0421DAEC24F18A7400447142 /* RoomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomCell.xib; sourceTree = "<group>"; };
+		0428872A249D63A1002E231B /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		04BB8642245B79E60026460E /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		04DD7A192417B23200831440 /* Roomy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roomy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DD7A1C2417B23200831440 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +46,7 @@
 		04DD7A252417B23400831440 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04DD7A282417B23400831440 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04DD7A2A2417B23400831440 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04FCF8D824A697E6005C5E2F /* GetAllRooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllRooms.swift; sourceTree = "<group>"; };
 		1EC1CEEACDD0368B64DC3522 /* Pods-Roomy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roomy.release.xcconfig"; path = "Target Support Files/Pods-Roomy/Pods-Roomy.release.xcconfig"; sourceTree = "<group>"; };
 		295FAB19B85551289DDC01D3 /* Pods_Roomy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Roomy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5EBEF19E0A0194953711AE6 /* Pods-Roomy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roomy.debug.xcconfig"; path = "Target Support Files/Pods-Roomy/Pods-Roomy.debug.xcconfig"; sourceTree = "<group>"; };
@@ -58,12 +64,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0403AB6124F323150048451D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0403AB6224F323280048451D /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		0403AB6224F323280048451D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0403AB6324F323550048451D /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0421DAEF24F18AF600447142 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				041C9C73249C2B6B00843266 /* Login.swift */,
+				041C9C77249C421800843266 /* Signup.swift */,
+				04FCF8D824A697E6005C5E2F /* GetAllRooms.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		0440C193248A6E5B00F6EB76 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				04DD7A222417B23200831440 /* Main.storyboard */,
-				04DD7A252417B23400831440 /* Assets.xcassets */,
-				04DD7A272417B23400831440 /* LaunchScreen.storyboard */,
+				0421DAEB24F18A7400447142 /* RoomCell.swift */,
+				0421DAEC24F18A7400447142 /* RoomCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -71,26 +102,22 @@
 		0440C194248A6E7000F6EB76 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				04DD7A1C2417B23200831440 /* AppDelegate.swift */,
 				04DD7A202417B23200831440 /* ViewController.swift */,
 				041C9C75249C382800843266 /* SignupViewController.swift */,
 				04BB8642245B79E60026460E /* SigninViewController.swift */,
-				04655FBA245B8D9400BE89EE /* tableViewController.swift */,
-				04655FBE245B971F00BE89EE /* DetailsViewController.swift */,
-				04655FBC245B8FA700BE89EE /* CustomCell.swift */,
+				0403AB5F24F2BB3E0048451D /* TableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		0440C195248A6E7D00F6EB76 /* Model */ = {
+		0440C195248A6E7D00F6EB76 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				041C9C6F249C0C4000843266 /* URLS.swift */,
-				041C9C71249C110E00843266 /* UserData.swift */,
-				041C9C73249C2B6B00843266 /* Login.swift */,
-				041C9C77249C421800843266 /* Signup.swift */,
+				041C9C71249C110E00843266 /* User.swift */,
+				0428872A249D63A1002E231B /* Room.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		04DD7A102417B23200831440 = {
@@ -114,10 +141,16 @@
 		04DD7A1B2417B23200831440 /* Roomy */ = {
 			isa = PBXGroup;
 			children = (
-				0440C195248A6E7D00F6EB76 /* Model */,
-				0440C194248A6E7000F6EB76 /* Controller */,
-				0440C193248A6E5B00F6EB76 /* View */,
+				0403AB6124F323150048451D /* Utilities */,
+				04DD7A1C2417B23200831440 /* AppDelegate.swift */,
+				04DD7A222417B23200831440 /* Main.storyboard */,
+				04DD7A272417B23400831440 /* LaunchScreen.storyboard */,
+				04DD7A252417B23400831440 /* Assets.xcassets */,
 				04DD7A2A2417B23400831440 /* Info.plist */,
+				0421DAEF24F18AF600447142 /* Network */,
+				0440C195248A6E7D00F6EB76 /* Models */,
+				0440C193248A6E5B00F6EB76 /* View */,
+				0440C194248A6E7000F6EB76 /* Controller */,
 			);
 			path = Roomy;
 			sourceTree = "<group>";
@@ -201,6 +234,7 @@
 			files = (
 				04DD7A292417B23400831440 /* LaunchScreen.storyboard in Resources */,
 				04DD7A262417B23400831440 /* Assets.xcassets in Resources */,
+				0421DAEE24F18A7400447142 /* RoomCell.xib in Resources */,
 				04DD7A242417B23200831440 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,16 +289,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BB8643245B79E60026460E /* SigninViewController.swift in Sources */,
+				0403AB6424F323550048451D /* UIViewController+Extension.swift in Sources */,
 				041C9C70249C0C4000843266 /* URLS.swift in Sources */,
+				0428872B249D63A1002E231B /* Room.swift in Sources */,
 				041C9C76249C382800843266 /* SignupViewController.swift in Sources */,
 				04DD7A212417B23200831440 /* ViewController.swift in Sources */,
 				04DD7A1D2417B23200831440 /* AppDelegate.swift in Sources */,
-				04655FBF245B971F00BE89EE /* DetailsViewController.swift in Sources */,
-				04655FBD245B8FA700BE89EE /* CustomCell.swift in Sources */,
+				04FCF8D924A697E6005C5E2F /* GetAllRooms.swift in Sources */,
+				0403AB6024F2BB3E0048451D /* TableViewController.swift in Sources */,
 				041C9C74249C2B6B00843266 /* Login.swift in Sources */,
+				0421DAED24F18A7400447142 /* RoomCell.swift in Sources */,
 				041C9C78249C421800843266 /* Signup.swift in Sources */,
-				04655FBB245B8D9400BE89EE /* tableViewController.swift in Sources */,
-				041C9C72249C110E00843266 /* UserData.swift in Sources */,
+				041C9C72249C110E00843266 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

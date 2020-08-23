@@ -8,45 +8,48 @@
 
 import UIKit
 import Alamofire
-class SigninViewController: UIViewController {
+import NVActivityIndicatorView
+
+class SigninViewController: UIViewController,NVActivityIndicatorViewable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+  
     }
-    
     
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
     
     @IBAction func SigninButton(_ sender: UIButton) {
         let email = userNameTextField.text!
         let password = passwordTextField.text!
         let user = User(name: "", email: email , password: password)
-        login(user, complation: gototableView)
+        Login.login(user, combletion: goToTableView)
        
     }
     
     @IBAction func signupButton(_ sender: Any) {
         gotoSignup()
+        
     }
     
-    
-    func gototableView()  {
-                let tableViewStoryBoard = UIStoryboard(name: "Main", bundle: nil)
-                let tableViewController = tableViewStoryBoard.instantiateViewController(withIdentifier: "tableViewController")
-                self.navigationController?.pushViewController(tableViewController, animated: true)
-            }
-    
-    
-
-    func gotoSignup() {
-        let SignupStoryBoard = UIStoryboard(name: "Main", bundle: nil)
-        let SignupViewController = SignupStoryBoard.instantiateViewController(withIdentifier: "SignupViewController")
-        self.navigationController?.pushViewController(SignupViewController, animated: true)
-    }
     
 }
 
+extension SigninViewController {
+    
+    func gotoSignup() {
+         let SignupStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+         let SignupViewController = SignupStoryBoard.instantiateViewController(withIdentifier: "SignupViewController")
+         self.navigationController?.pushViewController(SignupViewController, animated: true)
+     }
+     func goToTableView() {
+           let tableViewController = UIStoryboard(name: "Main", bundle: nil)
+           let TableViewController = tableViewController.instantiateViewController(withIdentifier: "TableViewController")
+           self.navigationController?.pushViewController(TableViewController, animated: true)
+       }
+     
+}
