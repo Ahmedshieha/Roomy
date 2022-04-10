@@ -7,6 +7,7 @@ target 'Roomy' do
   pod 'Alamofire', '~> 5.0.0-rc.3'
   pod 'NVActivityIndicatorView'
   pod 'RealmSwift' , '4.4.0'
+  pod 'JGProgressHUD'
   # Pods for Roomy
   
 end

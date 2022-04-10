@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.0.5)
+  - JGProgressHUD (2.2)
   - NVActivityIndicatorView (4.8.0):
     - NVActivityIndicatorView/Presenter (= 4.8.0)
   - NVActivityIndicatorView/Presenter (4.8.0)
@@ -11,22 +12,25 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-rc.3)
+  - JGProgressHUD
   - NVActivityIndicatorView
   - RealmSwift (= 4.4.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - JGProgressHUD
     - NVActivityIndicatorView
     - Realm
     - RealmSwift
 
 SPEC CHECKSUMS:
   Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
+  JGProgressHUD: d83d7a981b85d11205e19ff8ad5bb9c40571c847
   NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
   Realm: e125f464884cda953ebefe70c671b75b03b81b9b
   RealmSwift: 33656a42bd300959a081fc13347376bc478071af
 
-PODFILE CHECKSUM: 8b64bfacf03ebed7193caa692306d669e9b35139
+PODFILE CHECKSUM: 2565540b6b99a133a6670fed53bca7f96674917f
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.11.2
