@@ -11,14 +11,19 @@ import Alamofire
 
 class ViewController: UIViewController {
 
-  
+    @IBOutlet weak var startButtonLayout: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        startButtonLayout.layer.cornerRadius = 10
+        startButtonLayout.backgroundColor = .white
+        
         
     }
    
     @IBAction func startButton(_ sender: UIButton) {
+        print("Start")
         gotosignin()
         
     }

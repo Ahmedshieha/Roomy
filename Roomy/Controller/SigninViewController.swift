@@ -12,23 +12,51 @@ import NVActivityIndicatorView
 
 class SigninViewController: UIViewController,NVActivityIndicatorViewable {
 
+    @IBOutlet weak var signInButtonLayout: UIButton!
+    @IBOutlet weak var signUpButtonLayout: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-  
+        signInButtonLayout.layer.cornerRadius = 10
+        signUpButtonLayout.layer.cornerRadius = 10
+
+      
     }
     
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBAction func SigninButton(_ sender: UIButton) {
+       logIn()
+       
+    }
+    
+    func logIn() {
+         
         let email = userNameTextField.text!
         let password = passwordTextField.text!
         let user = User(name: "", email: email , password: password)
-        Login.login(user, combletion: goToTableView)
-       
+        
+        if textFieldsIsNotEmbty() {
+            Login.login(user) { error in
+                if error == nil {
+                    
+                } else {
+                    
+                }
+            }
+        } else {
+            print("please complete text Fields ")
+        }
+     
+    }
+    
+    func textFieldsIsNotEmbty() -> Bool{
+        
+        return userNameTextField.text != "" && passwordTextField.text != ""
+        
     }
     
     @IBAction func signupButton(_ sender: Any) {
@@ -36,8 +64,9 @@ class SigninViewController: UIViewController,NVActivityIndicatorViewable {
         
     }
     
-    
 }
+
+
 
 extension SigninViewController {
     

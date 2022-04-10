@@ -13,7 +13,7 @@ import UIKit
 class Login  {
     
     
-  static func login (_ user : User ,combletion : @escaping()->()) {
+    static func login (_ user : User ,combletion : @escaping(_ error : Error? ) -> Void) {
     
     AF.request(loginUrl ,method: .post , parameters: user ,encoder: JSONParameterEncoder.default).responseJSON
         {response in
@@ -27,7 +27,7 @@ class Login  {
                        }
                         else{
                           print("success")
-                          combletion()
+                            combletion(nil)
                         }
                  UserDefaults.standard.set(result, forKey: "Token")
             default:
