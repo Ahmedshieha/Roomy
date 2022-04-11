@@ -11,7 +11,7 @@ import Alamofire
 
 class SignUp {
     
- static func signup (_ user : User ) {
+    static func signup (_ user : User , completion : @escaping (_ error : Error?) -> Void ) {
     AF.request( signupUrl,method: .post , parameters: user ,encoder: JSONParameterEncoder.default).responseJSON{
         
         response in
@@ -20,11 +20,14 @@ class SignUp {
         if ((result["message"]) != nil) {
             
            print(result["message"]!)
-            
+            completion(nil)
     
         }
         else{
-            print("error")
+            let error = response.error
+            completion(error)
+            print(error!.localizedDescription)
+            
     
         }
         

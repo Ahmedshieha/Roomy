@@ -31,7 +31,7 @@ class Login  {
                         }
                  UserDefaults.standard.set(result, forKey: "Token")
             default:
-                print("error")
+                print(response.error?.localizedDescription)
         
             }
             
